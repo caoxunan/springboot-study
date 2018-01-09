@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 引入外部文件,resource：默认就会去项目下的resource目录寻找 -->
+	<properties resource="application.properties" />
+	
+	<!-- 全局设置信息 -->
+	<settings>
+		<!-- 开启驼峰自动匹配 -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<!-- 禁用 mybatis 二级缓存 -->
+		<setting name="cacheEnabled" value="false" />
+		<!-- 禁用 mybatis 一级缓存 -->
+		<setting name="localCacheScope" value="STATEMENT" />
+	</settings>
+
+
+	<!-- 配置mybatis的运行环境信息。可以配置多个 ，default：默认要调用的环境 -->
+	<environments default="development">
+		<!-- 一个运行环境设置 id:就是这个运行环境的唯一标示 -->
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<!-- 数据库连接参数 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="${spring.datasource.driver-class-name}" />
+				<property name="url" value="${spring.datasource.url}" />
+				<property name="username" value="${spring.datasource.username}" />
+				<property name="password" value="${spring.datasource.password}" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<!-- 将测试Mapper所对应的mapper.xml配置在下方(可配置多个) -->
+	<mappers>
+		<mapper resource="META-INF\mybatis\StudyTableMapper.xml" />
+	</mappers>
+
+</configuration>

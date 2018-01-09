@@ -1,0 +1,9 @@
+<html>    
+   <head>    
+      <meta http-equiv="content-type" content="text/html;charset=utf8">    
+   </head>    
+   <body>    
+    	您有一笔新的待审进件，进件编号为: <font color='red'>${orderId}</font>,</br>
+    	当前进度为: <font color='red'>${runState}</font>,请尽快审批
+   </body>
+</html>

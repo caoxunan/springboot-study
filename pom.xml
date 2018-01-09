@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cxn</groupId>
+	<artifactId>springboot-study</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<!-- 该parent包含了大量默认的配置，简化开发 -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.1.RELEASE</version>
+	</parent>
+
+	<modules>
+		<module>springboot-study-api</module>
+		<module>springboot-study-service</module>
+		<module>springboot-study-web</module>
+	</modules>
+	<dependencyManagement>
+		
+	</dependencyManagement>
+</project>
