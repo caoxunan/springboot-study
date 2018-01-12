@@ -15,28 +15,15 @@ http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
 	<bean id="processEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
 		<property name="processEngineConfiguration" ref="processEngineConfiguration" />
 	</bean>
-
-	<!-- <bean id="processExecutorConfigService" class="com.cxn.process.service.impl.ProcessExecutorConfigServiceImpl"/> -->
-
-	<!-- <bean id="roleInOrgExtend" class="com.cxn.process.service.impl.RoleInOrgExtendServiceImpl"/> -->
-	<!-- <bean id="nodeUserExtend" class="com.cxn.process.service.impl.NodeUserExtendServiceImpl"/> -->
-	<!-- <bean id="processFacadeService" class="com.cxn.process.service.impl.ProcessFacadeServiceImpl"/> -->
-
-	<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
-
-		<property name="dataSource" ref="dataSource" />
-		<property name="databaseType" value="mysql" />
-		<property name="transactionManager" ref="transactionManager" />
-		<property name="dbIdentityUsed" value="false" />
-		<property name="databaseSchemaUpdate" value="true" />
-		<property name="jobExecutorActivate" value="false" />
-		<property name="deploymentResources" value="classpath*:/spring/diagrams/*.bpmn"></property>
+	
+	<bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration" >
+		<property name="jdbcDriver" value="com.mysql.jdbc.Driver"/>
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/studytest_db?useUnicode=true&amp;characterEncoding=utf8"/>
+		<property name="jdbcUsername" value="root"/>
+		<property name="jdbcPassword" value="123"/>
+		<property name="databaseSchemaUpdate" value="true"/>		
 		<property name="activityFontName" value="宋体" />
 		<property name="labelFontName" value="宋体" />
-		<property name="idGenerator">
-			<bean class="org.activiti.engine.impl.persistence.StrongUuidGenerator" />
-		</property>
-
 	</bean>
 
 	<!-- activiti的各种服务接口 -->
