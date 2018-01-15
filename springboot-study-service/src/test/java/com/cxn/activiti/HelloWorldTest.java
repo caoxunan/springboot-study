@@ -356,6 +356,17 @@ public class HelloWorldTest {
 		
 	}
 
+	// 11.删除所有流程数据
+	@Test
+	public void deleteAllProcessDefinition(){
+		
+		List<Deployment> list = processEngine.getRepositoryService().createDeploymentQuery().list();
+		for (Deployment deployment : list) {
+			processEngine.getRepositoryService().deleteDeployment(deployment.getId(),true);
+		}
+		
+		
+	}
 
 
 	@Test
