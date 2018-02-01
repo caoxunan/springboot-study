@@ -25,7 +25,11 @@ _ _ _
 
 ** Velocity/Freemarker ： **模板引擎。
 
-** activity : ** 工作流
+**activity ** 工作流
 
 2018 年 01 月 09 日
 _ _ _
+
+* **openOffice**：添加了openoffice实现把ppt word excel等文件转换成pdf或jpg图片的api Demo。
+**wkhtmltox**：添加了wkhtmltox实现把html转成pdf或图片的api Demo。
+--- 添加kryo序列化和反序列化的测试代码，对比原始java序列化反序列化。

@@ -88,13 +88,30 @@
 			<artifactId>java-uuid-generator</artifactId>
 			<version>3.1.4</version>
 		</dependency>
-		
+
 		<!-- springboot整合junit -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
+		<!-- openoffice生成pdf -->
+		<dependency>
+			<groupId>com.artofsolving</groupId>
+			<artifactId>jodconverter</artifactId>
+			<version>2.2.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.artofsolving.jodconverter/jodconverter-core -->
+		<!-- <dependency> <groupId>org.artofsolving.jodconverter</groupId> <artifactId>jodconverter-core</artifactId> 
+			<version>3.0-beta-4</version> </dependency> -->
+
+		<dependency>
+			<groupId>midaigroup</groupId>
+			<artifactId>old-icepdf</artifactId>
+			<version>5.0</version>
+		</dependency>
+
 	</dependencies>
 </project>
