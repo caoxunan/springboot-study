@@ -103,7 +103,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
-
+		
+		<!-- apache httpclient包 -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
 		<!-- springboot整合junit -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
