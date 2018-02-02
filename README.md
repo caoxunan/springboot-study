@@ -36,3 +36,9 @@ _ _ _
 
 2018 年 02 月 01 日
 _ _ _
+
+* **DJNativeSwing**：添加  DJNativeSwing  内置浏览器实现html转image的效果,添加  DJNativeSwing  自带的sample样例.
+
+2018 年 02 月 02 日
+
+
