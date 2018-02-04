@@ -2,7 +2,7 @@ package com.cxn.swt;
 
 import org.junit.Test;
 
-import com.cxn.utils.PrintScreen4DJNativeSwingUtils;
+import com.cxn.common.utils.PrintScreen4DJNativeSwingUtils;
 
 public class SwtGenerateImgTest {
 

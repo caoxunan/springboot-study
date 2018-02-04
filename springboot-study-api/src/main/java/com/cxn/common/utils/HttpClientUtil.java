@@ -7,7 +7,7 @@
  *
 */
 
-package com.cxn.utils;
+package com.cxn.common.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
