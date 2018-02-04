@@ -1,4 +1,4 @@
-package com.cxn.utils;
+package com.cxn.common.utils;
 
 
 import java.io.FileInputStream;

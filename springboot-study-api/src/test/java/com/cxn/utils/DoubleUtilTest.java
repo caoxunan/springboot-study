@@ -2,6 +2,8 @@ package com.cxn.utils;
 
 import org.junit.Test;
 
+import com.cxn.common.utils.DoubleUtil;
+
 public class DoubleUtilTest {
 
 	/**

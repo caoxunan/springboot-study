@@ -40,5 +40,13 @@ _ _ _
 * **DJNativeSwing**：添加  DJNativeSwing  内置浏览器实现html转image的效果,添加  DJNativeSwing  自带的sample样例.
 
 2018 年 02 月 02 日
+_ _ _
 
+* **IdentityNo**：添加身份证工具类，可根据身份证号码，获得性别/年龄/出生年月日
+* **DateUtil**：添加日期工具类，几乎适用于所有涉及与日期的操作(放款,催收...等日期计算,转换,判断)
+* **HttpClientUtil**：添加http请求工具类（待junit测试）
+* **ExceptionHandler**：添加统一异常处理（待junit测试）
+修改api包路径结构,移动工具类至新路径：
+2018-02-04
+_ _ _
 
