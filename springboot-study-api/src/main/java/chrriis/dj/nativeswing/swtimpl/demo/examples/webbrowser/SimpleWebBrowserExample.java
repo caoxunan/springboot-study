@@ -33,7 +33,7 @@ public class SimpleWebBrowserExample {
     JPanel webBrowserPanel = new JPanel(new BorderLayout());
     webBrowserPanel.setBorder(BorderFactory.createTitledBorder("Native Web Browser component"));
     final JWebBrowser webBrowser = new JWebBrowser();
-    webBrowser.navigate("http://echarts.baidu.com/echarts2/doc/example/line1.html");
+    webBrowser.navigate("http://www.baidu.com");
 //    webBrowser.navigate("http://www.google.com");
     webBrowserPanel.add(webBrowser, BorderLayout.CENTER);
     contentPane.add(webBrowserPanel, BorderLayout.CENTER);
