@@ -25,8 +25,8 @@ public class ExceptionHandle {
 	public ResponseResult<?> handle(Exception e) {
 		if (e instanceof ServiceException) {
 			ServiceException serviceException = (ServiceException) e;
-//			已定义异常一般为业务判断，抛出异常，一般不需要log日志记录
-//			logger.error(serviceException.getMessage() + "：{}", e);
+			// 已定义异常一般为业务判断，抛出异常，一般不需要log日志记录
+			// logger.error(serviceException.getMessage() + "：{}", e);
 			return RestResultUtil.error(serviceException.getErrorCode(), serviceException.getErrorMsg());
 		} else {
 			logger.error(ResultEnum.UNKONW_ERROR.getMsg() + "：{}", e);
