@@ -23,4 +23,9 @@ public class RestResultUtil {
 		result = new ResponseResult<>(code, msg, null);
 		return result;
 	}
+	
+	public static ResponseResult<?> error(int code, String msg, Object data) {
+		result = new ResponseResult<>(code, msg, data);
+		return result;
+	}
 }
